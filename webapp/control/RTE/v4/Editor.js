@@ -1,9 +1,11 @@
+window.CKEDITOR_BASEPATH = "/webapp/libs/ckeditor/v4/";
 sap.ui.define([
 	"sap/ui/core/Control",
-	"gy/com/CustomEditor/control/RTE/v4/EditorToolbar"
-], function (Control, RTEToolbar) {
+	"gy/com/CustomEditor/control/RTE/v4/EditorToolbar",
+	"gy/com/CustomEditor/libs/ckeditor/v4/ckeditor"
+], function (Control, RTEToolbar, RTE) {
 	"use strict";
-	var RTE = window.CKEDITOR;
+	RTE = window.CKEDITOR;
 	return Control.extend("gy.com.CustomEditor.control.RTE.v4.Editor", {
         metadata: {
             properties: {
@@ -46,6 +48,10 @@ sap.ui.define([
                     type: "string",
                     defaultValue: "#FAFAFA"
                 },
+                "editorSkin": {
+                    type: "string",
+                    defaultValue: "moono-lisa"
+                },                
                 "plugins": {
                     type: "string",
                     defaultValue: "Default"
@@ -62,6 +68,7 @@ sap.ui.define([
         },
 		init : function () {
 			this.rtEditorDivId = this.getId() + '-rtEditorDiv';
+			//RTE = window.CKEDITOR;
 		},
         renderer: function(oRm, oControl) {
             oRm.write('<div ');
@@ -127,8 +134,11 @@ sap.ui.define([
             options.width = this.getWidth();
             options.toolbarStartupExpanded = true;
             options.browserContextMenuOnCtrl = true;
+            var customEditorSkin = this.getEditorSkin();
+            if(customEditorSkin){
+            	CKEDITOR.config.skin = customEditorSkin;	
+            }
             CKEDITOR.config.customFontNames = "";
-            //options.customFontNames = "";
             var customFonts = this.getCustomFonts();
             if(customFonts){
             	for(var i=0; i<customFonts.length;i++){

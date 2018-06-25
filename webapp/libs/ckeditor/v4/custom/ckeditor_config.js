@@ -1,13 +1,4 @@
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see https://ckeditor.com/legal/ckeditor-oss-license
- */
-
 CKEDITOR.editorConfig = function( config ) {
-	// Define changes to default configuration here.
-	// For complete reference see:
-	// http://docs.ckeditor.com/#!/api/CKEDITOR.config
-
 	// The toolbar groups arrangement, optimized for two toolbar rows.
 	config.toolbarGroups = [
 		{ name: 'clipboard',   groups: [ 'clipboard', 'undo' ] },
@@ -36,9 +27,7 @@ CKEDITOR.editorConfig = function( config ) {
 	// Simplify the dialog windows.
 	config.removeDialogTabs = 'image:advanced;link:advanced';
 	
-	//Add Custom fonts
 	config.contentsCss = "./css/fonts.css";
-	
 	//the next line add the new font to the combobox in CKEditor
 	if(config.customFontNames){
 		config.font_names = config.customFontNames + config.font_names;

@@ -18,6 +18,15 @@
         "entryPath": "/test-resources"
       },
       "description": "SAPUI5 Test Resources"
+    },
+    {
+      "path": "/resources/sharedlibrary/",
+      "target": {
+        "type": "application",
+        "name": "sharedlibrary",
+        "entryPath": "/"
+      },
+      "description": "My shared library"    	
     }
   ],
   "sendWelcomeFileRedirect": true

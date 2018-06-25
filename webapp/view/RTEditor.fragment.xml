@@ -1,6 +1,0 @@
-<core:FragmentDefinition
-   xmlns="sap.m"
-   xmlns:l="sap.ui.layout"
-   xmlns:core="sap.ui.core">
-	<core:HTML content="&lt;div name=&quot;content&quot; id=&quot;editor&quot;&gt;&lt;/div&gt;"/>
-</core:FragmentDefinition>
