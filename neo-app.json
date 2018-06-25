@@ -20,13 +20,13 @@
       "description": "SAPUI5 Test Resources"
     },
     {
-      "path": "/resources/sharedlibrary/",
+      "path": "/resources/com/capita/ControlsLibrary/",
       "target": {
         "type": "application",
-        "name": "sharedlibrary",
+        "name": "ControlsLibrary",
         "entryPath": "/"
       },
-      "description": "My shared library"    	
+      "description": "Capita Custom control library"    	
     }
   ],
   "sendWelcomeFileRedirect": true
