@@ -63,7 +63,8 @@
 			"css": [
 				{
 					"uri": "css/style.css"
-				},{
+				},
+				{
 					"uri": "/resources/com/capita/ControlsLibrary/css/fontawesome-all.css"
 				}
 			]

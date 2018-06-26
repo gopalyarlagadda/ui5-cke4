@@ -23,7 +23,7 @@
       "path": "/resources/com/capita/ControlsLibrary/",
       "target": {
         "type": "application",
-        "name": "ControlsLibrary",
+        "name": "controlslibrary",
         "entryPath": "/"
       },
       "description": "Capita Custom control library"    	
