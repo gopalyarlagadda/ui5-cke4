@@ -9,7 +9,7 @@
 		<pages>
 			<Page id="idAppControl">
 				<content>
-	
+					<Label class="fa fa-ambulance fa-4x"></Label>
 				</content>
 			</Page>
 		</pages>

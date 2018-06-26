@@ -1,7 +1,6 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
 	"com/capita/ControlsLibrary/uiControls/RTE/control/Editor"
-	//"gy/com/CustomEditor/control/RTE/v4/Editor"
 ], function(Controller, RTEditor) {
 	"use strict";
 
